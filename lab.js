@@ -6,12 +6,12 @@
   If it is not, console-log "Coding has it's challenges."
 */
 
-// const lovesCode = true;
-// if (lovesCode === true) {
-//     console.log("I love to code!");
-// } else {
-//     console.log("Coding has its challenges");
-// }
+const lovesCode = true;
+if (lovesCode === true) {
+    console.log("I love to code!");
+} else {
+    console.log("Coding has its challenges");
+}
 
 // For problems 2-3 use the following lines of code:
 // var amysAge = 29
@@ -25,13 +25,13 @@
   Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
 */
 
-// if (amysAge > brittanisAge) {
-//     console.log(`Amy is older`);
-// } else if (amysAge < brittanisAge) {
-//     console.log(`Brittani is older`);
-// } else {
-//     console.log(`Amy and Brittany are the same age`);
-// }
+if (amysAge > brittanisAge) {
+    console.log(`Amy is older`);
+} else if (amysAge < brittanisAge) {
+    console.log(`Brittani is older`);
+} else {
+    console.log(`Amy and Brittany are the same age`);
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -39,11 +39,11 @@
   Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
 
-// if (amysBirthYear === brittanisBirthYear) {
-//     console.log("Amy and Brittani were born in the same year");
-// } else{
-//     console.log("Amy and Brittani were not born in the same year");
-// }
+if (amysBirthYear === brittanisBirthYear) {
+    console.log("Amy and Brittani were born in the same year");
+} else{
+    console.log("Amy and Brittani were not born in the same year");
+}
 
 
 // For problems 5-6 use the following lines of code:
@@ -54,14 +54,14 @@
   Create a variable named 'firstItem' and set it equal to the first value of the 'arr' array.
 */
 
-// var firstItem = arr[0];
+var firstItem = arr[0];
 
 ////////// PROBLEM 5 //////////
 /*
   Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
 */
 
-// const lastItem = arr.pop();
+const lastItem = arr.pop();
 
 
 ////////// PROBLEM 7 //////////
@@ -74,9 +74,9 @@
   Loop through the 'family' array and console.log every item.
 */
 
-// for (let i = 0; i < family.length; i++) {
-//     console.log(family[i]);
-// }
+for (let i = 0; i < family.length; i++) {
+    console.log(family[i]);
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -90,11 +90,11 @@
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
-// for (let i = 0; i < nums.length; i++) {
-//     if (nums[i] % 2 === 0) {
-//         evensArr.push(nums[i]);
-//     }
-// }
+for (let i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 === 0) {
+        evensArr.push(nums[i]);
+    }
+}
 
 // console.log(evensArr);
 
@@ -108,17 +108,17 @@ var score = 74
   Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console-log an 'A', between 80 and 89, console-log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console-log an 'F'.
 */
 
-// if (score >= 90) {
-//     console.log("A");
-// } else if (score >= 80 && score <= 89) {
-//     console.log("B");
-// } else if (score >= 70 && score <= 79) {
-//     console.log("C");
-// } else if (score >= 60 && score <= 69) {
-//     console.log("D");
-// } else {
-//     console.log("F");
-// }
+if (score >= 90) {
+    console.log("A");
+} else if (score >= 80 && score <= 89) {
+    console.log("B");
+} else if (score >= 70 && score <= 79) {
+    console.log("C");
+} else if (score >= 60 && score <= 69) {
+    console.log("D");
+} else {
+    console.log("F");
+}
 ////////// Intermediate Problems //////////
 
 ////////// PROBLEM 10 //////////
@@ -129,23 +129,23 @@ var score = 74
 
 // let changeMyMind = false;
 
-// if (changeMyMind === true) {
-//     changeMyMind = false;
-//     console.log(changeMyMind);
-// } else if (changeMyMind === false) {
-//     changeMyMind = true;
-//     console.log(changeMyMind);
-// }
+if (changeMyMind === true) {
+    changeMyMind = false;
+    console.log(changeMyMind);
+} else if (changeMyMind === false) {
+    changeMyMind = true;
+    console.log(changeMyMind);
+}
 
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
 // let changeMyMind = false;
 
-// if (changeMyMind === true) {
-//     console.log(changeMyMind);
-// } else {
-//     console.log(!changeMyMind);
-// }
+if (changeMyMind === true) {
+    console.log(changeMyMind);
+} else {
+    console.log(!changeMyMind);
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -164,11 +164,11 @@ let problem9 = myFavoriteNumbers[4];
 
 // Subscripting an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Now, use an if statement to help make sure you have the correct amount of elements, and then reset your variable, 'problem9' to the value of the 7th element in the array.
 
-// if (myFavoriteNumbers.length === 6){
-//     console.log(myFavoriteNumbers[6]);
-//     problem9 = myFavoriteNumbers[6];
-//     console.log(problem9);
-// }
+if (myFavoriteNumbers.length === 6){
+    console.log(myFavoriteNumbers[6]);
+    problem9 = myFavoriteNumbers[6];
+    console.log(problem9);
+}
 
 ////////// PROBLEM 12 //////////
 
@@ -178,11 +178,11 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 // Use a for-loop to iterate through 'listOfNumbers', then check to see if the number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
-// for (let i = 0; i < listOfNumbers.length; i++) {
-//     if (listOfNumbers[i] % 3 === 0) {
-//         console.log(`${listOfNumbers[i]} is divisible by 3`);
-//     }
-// }
+for (let i = 0; i < listOfNumbers.length; i++) {
+    if (listOfNumbers[i] % 3 === 0) {
+        console.log(`${listOfNumbers[i]} is divisible by 3`);
+    }
+}
 
 ////////// PROBLEM 13 //////////
 // Do not edit the code below.
@@ -193,9 +193,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the 'letters' array. Console-log every item in the array.
 */
 
-// for (var i = letters.length - 1; i >= 0; i--) {
-//     console.log(letters[i]);
-// }
+for (var i = letters.length - 1; i >= 0; i--) {
+    console.log(letters[i]);
+}
 
 ////////// Advanced Problems //////////
 
@@ -216,25 +216,25 @@ If F: "The student is failing."
 If the letter grade is not one of the above letters, console.log 'Not an eligible grade.'
 */
 
-// switch (letterGrade) {
-//     case "A":
-//         console.log("The student is doing excellently")
-//         break;
-//     case "B":
-//         console.log("The student is doing well.")
-//         break;
-//     case "C":
-//         console.log("The student is doing alright.")
-//         break;
-//     case "D":
-//         console.log("The student is not doing very well.")
-//         break;  
-//     case "F":
-//         console.log("The student is failing.")
-//         break;
-//     default:
-//         console.log("Not an eligble grade")
-// }
+switch (letterGrade) {
+    case "A":
+        console.log("The student is doing excellently")
+        break;
+    case "B":
+        console.log("The student is doing well.")
+        break;
+    case "C":
+        console.log("The student is doing alright.")
+        break;
+    case "D":
+        console.log("The student is not doing very well.")
+        break;  
+    case "F":
+        console.log("The student is failing.")
+        break;
+    default:
+        console.log("Not an eligble grade")
+}
 
 
 ////////// PROBLEM 15 //////////
